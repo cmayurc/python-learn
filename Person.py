@@ -6,6 +6,9 @@ class Person:
     def printName(self):
         print(self.fName,self.lName)
 
+class Student(Person):
+    pass
 
-x = Person("Mayur","Chandra")
+
+x = Student("Mayur","Chandra")
 x.printName()
