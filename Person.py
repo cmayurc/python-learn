@@ -8,11 +8,15 @@ class Person:
         print(self.fName,self.lName)
 
 class Student(Person):
-    def __init__(self, fname, lname):
+    def __init__(self, fname, lname,year):
         print("sub class calling Parent class")
         super().__init__(fname, lname)
+        self.graduationYear = year
+    def welcome(self):
+        print("Welcome ",self.fName,self.lName," to the class of ",self.graduationYear)
 
 
 
-x = Student("Mayur","Chandra")
+x = Student("Mayur","Chandra",2005)
 x.printName()
+x.welcome();
